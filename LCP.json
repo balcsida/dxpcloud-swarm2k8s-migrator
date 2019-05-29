@@ -1,0 +1,19 @@
+{
+    "kind": "Deployment",
+    "id": "swarm2k8s",
+    "memory": 1024,
+    "cpu": 1,
+    "deploy": false,
+    "env": {
+      "SWARM_PROJECT_NAME": "lrsupportemea",
+      "SWARM_BACKUP_ID": "dxpcloud-347743632931238248-201905250048",
+      "SWARM_PROJECT_MASTER_TOKEN": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "LCP_USER_ID": "00xxxxxxxxxxxxxxxxxx"
+    },
+    "dependencies": [
+      "database",
+      "backkup",
+      "liferay"
+    ]
+}
+  
