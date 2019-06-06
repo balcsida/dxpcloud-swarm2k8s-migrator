@@ -1,8 +1,6 @@
 {
     "kind": "Deployment",
     "id": "swarm2k8s",
-    "memory": 1024,
-    "cpu": 1,
     "deploy": false,
     "env": {
       "SWARM_PROJECT_NAME": "lrsupportemea",
