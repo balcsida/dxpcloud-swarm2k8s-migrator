@@ -5,7 +5,7 @@ Migration helper for DXP Cloud
 ## Usage
 
 1. Download [the example LCP.json](LCP.json) to an empty folder and configure it according your needs (see Configuration for more info)
-2. Deploy it using `lcp` on the production environment. Example: `lcp deploy -p <projectname> -e prd -s swarm2k8s
+2. Deploy it using `lcp` on the production environment. Example: `lcp deploy -p <projectname> -e prd -s swarm2k8s`
 3. See the logs for the deployed service.
 
 ## Configuration
