@@ -8,10 +8,16 @@
       "SWARM_PROJECT_MASTER_TOKEN": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
       "LCP_USER_ID": "00xxxxxxxxxxxxxxxxxx"
     },
-    "dependencies": [
-      "database",
-      "backup",
-      "liferay"
-    ]
+    "readinessProbe": {
+      "exec": {
+        "command": ["cat", "/tmp/healthy"]
+      },
+      "initialDelaySeconds": 30,
+      "periodSeconds": 20
+    },
+    "environments": {
+      "prd": {
+        "deploy": true
+      }
+    }
 }
-  
