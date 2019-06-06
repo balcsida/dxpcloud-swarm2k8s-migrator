@@ -1,8 +1,12 @@
 # dxpcloud-swarm2k8s-migrator
 
-Migration helper for Liferay Cloud
+Migration helper for DXP Cloud
 
-Configure the following environment variables in `LCP.json`:
+## Usage
+
+1. Download [the example LCP.json](LCP.json) to an empty folder and configure it according your needs (see Configuration for more info)
+2. Deploy it using `lcp` on the production environment. Example: `lcp deploy -p <projectname> -e prd -s swarm2k8s
+3. See the logs for the deployed service.
 
 ## Configuration
 
@@ -23,4 +27,4 @@ The master token of your project. You can find it under Settings.
 You need to set your user ID, which you can obtain by logging in to [liferay.cloud](https://liferay.cloud/), then visit this url:
 https://api.liferay.cloud/user
 
-Your user id will start with `00` (double zer) look like this: `00ulvkodwC1DoypUP356`
+Your user id will start with `00` (double zero) look like this: `00ulvkodwC1DoypUP356`
